@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Node / TypeScript
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# Secrets and per-machine settings
+.env
+.env.*
+!.env.example
+settings.local.json
+
+# Logs
+*.log
