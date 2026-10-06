@@ -1,6 +1,7 @@
 ## Scope creep
-Prevent increasing the scope of the current task.
+Never widen a task's blast radius. Leave bugs or improvement opportunities outside
+the task's scope alone — unless you're already editing the file for this task.
+In that case, fix it only if it belongs to the task's scope.
 
-Leave bugs or improvement opportunities outside the current task's scope. If fixing them would widen the blast radius of your changes, ignore them. Fix it only when it's in a file you're already changing and belongs to the task's scope.
-
-Either way, flag it to the user/parent agent so they're aware and can decide whether those should be addressed.
+Either way, flag what you skipped or fixed in-scope. The user/parent agent decides
+whether it needs separate follow-up.
