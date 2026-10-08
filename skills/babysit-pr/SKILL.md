@@ -25,6 +25,8 @@ to the user/parent agent and stop now.
 2. All code review comments were addressed.
 3. The score from AI review agents are good.
 
+Once it succeeded, mark the pull/merge request as ready.
+
 ## Replying comments
 When autonomously replying any comments on a pull/merge requests, use the message format below to ensure attribution is clear. Model slugs should be written in kebab-case format, e.g. `claude-fable-5-1`, `claude-opus-5-5`.
 

@@ -55,5 +55,5 @@ Check `git remote get-url origin` to tell which forge you're on, and whether thi
 
 Otherwise, write the description to a temp file and pass it as a file argument, not an inline string — `--body-file` on `gh`, `--description-file` on `glab`. An inline string lets escaped backticks and markdown render literally instead of formatting. Default to opening as a **draft**, unless explicitly told not to.
 
-- GitHub: `gh pr create --draft --title "<title>" --body-file <path>`.
-- GitLab: `glab mr create --draft --title "<title>" --description-file <path>`. If personal defaults (assignee, labels) apply on this GitLab remote, see `references/glab-defaults.md`.
+- GitHub: `gh pr create --draft --title "TICKET-ID: <title>" --body-file <path>`.
+- GitLab: `glab mr create --draft --title "TICKET-ID: <title>" --description-file <path> --assignee "nicolas.jardim" --label "team::app-engagement"`. If personal defaults (assignee, labels) apply on this GitLab remote, see `references/glab-defaults.md`.
