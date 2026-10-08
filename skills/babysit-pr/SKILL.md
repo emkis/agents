@@ -30,6 +30,7 @@ When autonomously replying any comments on a pull/merge requests, use the messag
 
 ```md
 <message>
+
 ---
 > Replied by `<model-slug>` on behalf of Nicolas Jardim
 ```
