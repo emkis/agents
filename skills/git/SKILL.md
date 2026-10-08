@@ -1,5 +1,7 @@
-Work in progress.
-Preferences for git related things.
+---
+name: git
+description: The user's git conventions. Use when committing, creating or naming a branch, rebasing, stacking branches, or touching worktrees.
+---
 
 ## Commit format
 Use prefixes in the commit message, to help identifying where the changes belongs to.
@@ -17,7 +19,7 @@ Examples:
 - Use format `<TICKET-ID>/<kebab-slug>` for branch names.
 
 Use the ID of the issue in the issue tracker (Jira, Linear, GitHub), if none
-is available, flag to user, and skip it.
+is available, flag it to the user and skip it.
 
 ## Rebasing
 - Use `git rbm` command to rebase with remote's default branch.
@@ -25,7 +27,7 @@ is available, flag to user, and skip it.
 remote's branch instead.
 
 ## Stacking
-When creating a new branch that depends on other branche's changes, stack them:
+When creating a new branch that depends on another branch's changes, stack them:
 - Create new branch
 - Stash any local changes
 - Run `git merge --squash <dependent-branch>` to get all changes.
