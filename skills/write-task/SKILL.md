@@ -19,5 +19,6 @@ Different kinds of task need different shapes. Route the brain-dump to one type,
 
 ## Stop signal
 
-Show the task's title and description to the user, then ask them to review.
-Stop there. Do not create a file. Do not register the issue into a issue tracker
+Show 3 distinct task titles for the user to pick.
+Show the task description to the user, then ask them to review.
+Stop there. Do not create a file. Do not register the issue into a issue tracker.
