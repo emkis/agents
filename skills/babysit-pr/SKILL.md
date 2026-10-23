@@ -10,12 +10,13 @@ Use `gh` or `glab` CLIs to check if the current branch already has an open pull/
 
 ## Babysitting loop
 1. Watch the target pull/merge requests CI.
-2. If any CI checks fails, fix them, push it and back to step 1.
-3. Trigger AI review agent(s) on GitHub/GitLab.
-4. Wait for it to finish reviewing.
-5. Address their comments, if any.
-6. Rebase with latest main/master branch.
-7. Push it, back step 1.
+2. Wait for every CI check to finish. Pending is not green.
+3. If any CI checks fails, fix them, push it and back to step 1.
+4. Only once all CI checks are green, trigger AI review agent(s) on GitHub/GitLab.
+5. Wait for it to finish reviewing.
+6. Address their comments, if any.
+7. Rebase with latest main/master branch.
+8. Push it, back step 1.
 
 Stop the loop after 3 rounds. If final round made CI checks fail, flag it
 to the user/parent agent and stop now.
@@ -39,6 +40,9 @@ When autonomously replying any comments on a pull/merge requests, use the messag
 
 ## Triggering AI review agent
 > This step is currently only available on GitLab, skip on GitHub.
+
+Never trigger a review while CI is pending or failing. Failures need fixing first,
+and a review of code that will change wastes the round.
 
 On GitLab, the AI review agent is called Greptile, it can be identified by
 the `@greptile` handle.
